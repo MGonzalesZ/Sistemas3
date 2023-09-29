@@ -9,7 +9,7 @@ function App() {
       <header className="App-header">
         <div>
         <h2>GRUPO SISTEMAS</h2>
-        <ExpenseItem></ExpenseItem>
+        <ExpenseItem></ExpenseItem><br></br>
         <Fecha></Fecha></div>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
