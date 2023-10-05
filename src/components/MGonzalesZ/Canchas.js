@@ -29,6 +29,7 @@ const Canchas = () => {
   ];
   return (
     <div className="canchas">
+      <br/>
       <h2>CANCHAS</h2>
       <div className="row">
         <div className="col-1"></div>
