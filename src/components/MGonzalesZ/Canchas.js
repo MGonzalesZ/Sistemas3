@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import './Canchas.css';
 import deportesImg from './img/deportes.jpg';
 import futsalImg from './img/futsal.jpg';
@@ -8,6 +9,7 @@ import basquetImg from './img/basquet.jpg';
 import CanchasAccesos from './CanchasAccesos';
 
 const Canchas = () => {
+
   const initial_deportes = [
     {
       id: 'd1',
@@ -68,18 +70,14 @@ const Canchas = () => {
       </div>
       <div className="row">
         <div className="col-1"></div>
-        <div className="col-2">
-          <button className="deporte-item">
+        <div className="col-2 deporte-item">
+        <Link to="/deporte">          
             <h4>{initial_deportes[0].titulo}</h4>
-
-            <img src={futsalImg} alt={initial_deportes[0].titulo} />
-          </button>
+            <img src={futsalImg} alt={initial_deportes[0].titulo} />          
+        </Link>
         </div>
         <div className="col-2"></div>
-        {/* <CanchasAccesos
-          titulo={initial_deportes[0].titulo}
-          imagen={initial_deportes[0].imagen}
-        /> */}
+
         <div className="col-2 deporte-item">
           <h4>{initial_deportes[1].titulo}</h4>
 

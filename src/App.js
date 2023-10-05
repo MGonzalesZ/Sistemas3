@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 
-import { BrowserRouter, Link, Outlet, Route, Routes } from 'react-router-dom';
 import Fecha from './components/Ejemplo/Fecha';
 import Canchas from './components/MGonzalesZ/Canchas';
 import DeporteItem from './components/MGonzalesZ/DeporteItem';
+import PruebaRouter from './PruebaRouter';
 
 function App() {
   const expenses = [
@@ -31,23 +31,13 @@ function App() {
 
   return (
     <div className="App">
-      <div>
+      {/* <div>
         <h2>GRUPO SISTEMAS</h2>
         <Canchas />
         <br></br>
         <Fecha></Fecha>
-      </div>
-
-      <BrowserRouter>
-        <div>
-          <main className="mainApp">
-            <Routes>
-              <Route path="/deportes/1" element={<Canchas />} />
-              <Route path="/deportes/2" element={<DeporteItem />} />
-            </Routes>
-          </main>
-        </div>
-      </BrowserRouter>
+      </div> */}
+      <PruebaRouter />      
     </div>
   );
 }
