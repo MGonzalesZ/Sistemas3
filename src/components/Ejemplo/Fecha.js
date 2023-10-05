@@ -1,4 +1,5 @@
 import React from 'react';
+import './Fecha.css';
 
 class Fecha extends React.Component {
   state = {
@@ -6,7 +7,7 @@ class Fecha extends React.Component {
   };
   render() {
     return (
-      <div className="App">
+      <div className="fecha-act">
         <p>Fecha y hora actuales : {this.state.curDT}</p>
       </div>
     );

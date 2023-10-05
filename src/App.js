@@ -1,8 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 
+import { BrowserRouter, Link, Outlet, Route, Routes } from 'react-router-dom';
 import Fecha from './components/Ejemplo/Fecha';
 import Canchas from './components/MGonzalesZ/Canchas';
+import DeporteItem from './components/MGonzalesZ/DeporteItem';
 
 function App() {
   const expenses = [
@@ -36,17 +38,16 @@ function App() {
         <Fecha></Fecha>
       </div>
 
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <div>
           <main className="mainApp">
-            <Container>
-              <Routes>
-                <Route path="/producto/:clave" element={<ProductoScreen />} />
-              </Routes>
-            </Container>
+            <Routes>
+              <Route path="/deportes/1" element={<Canchas />} />
+              <Route path="/deportes/2" element={<DeporteItem />} />
+            </Routes>
           </main>
         </div>
-      </BrowserRouter> */}
+      </BrowserRouter>
     </div>
   );
 }
