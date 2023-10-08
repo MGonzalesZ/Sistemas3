@@ -18,6 +18,7 @@ export default function PruebaRouter() {
           {/* Kael */}
           {/* Mauricio Garcia */}
           {/* Rene */}
+          {/* Lucia */}
         </Routes>
       </Router>
     </>
