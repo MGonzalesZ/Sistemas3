@@ -2,6 +2,7 @@ import React from 'react';
 import deportesImg from './img/Univ.jpg';
 import './DeporteItem.css';
 import Fecha from './Otros/Fecha';
+import BarraPrincipal from '../../BarraPrincipal';
 
 // import Grid from '@mui/system/Unstable_Grid';
 // import styled from '@mui/system/styled';
@@ -20,6 +21,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 function DeporteItem() {
   return (
     <div>
+      <BarraPrincipal/>
       <header></header>
       <br />
       <h2>FUTSAL</h2>

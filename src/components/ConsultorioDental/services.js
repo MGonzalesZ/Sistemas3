@@ -2,10 +2,12 @@ import products1 from './img/products-01.jpg';
 import products2 from './img/products-02.jpg';
 import products3 from './img/products-03.jpg';
 import Header from './header';
+import BarraPrincipal from '../../BarraPrincipal';
 
 function Servicios() {
   return (
     <div>
+      <BarraPrincipal/>
       <Header></Header>
       <header>
         <h1 className="site-heading text-center text-faded d-none d-lg-block">

@@ -8,10 +8,12 @@ import { Horario } from './Horario';
 import { NavPer } from './NavPer';
 import { FooterUniv } from './FooterUniv';
 import { Parrafo } from './Parrafo';
+import BarraPrincipal from '../../BarraPrincipal';
 
 export default function App() {
   return (
     <div>
+      <BarraPrincipal/>
       <header>
         <h1 className="site-heading text-center text-faded d-none d-lg-block">
           <span className="site-heading-upper text-primary mb-3"></span>

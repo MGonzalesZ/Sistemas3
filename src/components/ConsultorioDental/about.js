@@ -1,16 +1,20 @@
 import about from './img/about.jpg';
 import Header from './header';
+
+import BarraPrincipal from '../../BarraPrincipal';
 // import Image from 'next/image'
 
 function About() {
   return (
     <div>
+            <BarraPrincipal/>
       <header>
         <h1 className="site-heading text-center text-faded d-none d-lg-block">
           <span className="site-heading-upper text-primary mb-3">UNIVALLE</span>
           <span className="site-heading-lower">Sobre nosotros</span>
         </h1>
       </header>
+
       <Header></Header>
       <section className="page-section about-heading">
         <div className="container">

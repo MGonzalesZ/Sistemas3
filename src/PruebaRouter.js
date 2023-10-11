@@ -10,6 +10,8 @@ import Principal from './BarraPrincipal';
 import Fotocopiadora from './components/Fotocopiadora/Fotocopiadora';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import About from './components/ConsultorioDental/about';
+import Servicios from './components/ConsultorioDental/services';
 
 export default function PruebaRouter() {
   return (
@@ -22,8 +24,12 @@ export default function PruebaRouter() {
           <Route path="/deporte" element={<DeporteItem />} />
           <Route path="/PlataformaAtencion" element={<Plataforma />} />
           <Route path="/ConsultorioDental" element={<ClinicaDental />} />
+          <Route path="/ConsultorioDental/about" element={<About />} />
+          <Route path="/ConsultorioDental/services" element={<Servicios />} />
+          <Route path="/Fotocopiadora" element={<Fotocopiadora />} />
           <Route path="/NAF" element={<NAFpage />} />
           <Route path="/Fotocopiadora" element={<Fotocopiadora />} />
+          
         </Routes>
       </Router>
     </>

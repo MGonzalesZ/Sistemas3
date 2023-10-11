@@ -5,6 +5,7 @@ import deportesImg from './img/deportes.jpg';
 import futsalImg from './img/futsal.jpg';
 import volleyImg from './img/volley.jpg';
 import basquetImg from './img/basquet.jpg';
+import BarraPrincipal from '../../BarraPrincipal';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -28,6 +29,7 @@ const Canchas = () => {
   ];
   return (
     <div className="canchas">
+            <BarraPrincipal />
       <div>
         <br />
         <center>

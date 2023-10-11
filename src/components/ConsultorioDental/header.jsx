@@ -38,7 +38,7 @@ function Header() {
               </li>
               <li className="nav-item px-lg-4">
                 <Link
-                  to="//ConsultorioDental/about"
+                  to="/ConsultorioDental/about"
                   className="nav-link text-uppercase"
                 >
                   Sobre nosotros

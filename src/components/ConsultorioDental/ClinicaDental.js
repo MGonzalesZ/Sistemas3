@@ -3,16 +3,19 @@ import intro from './img/intro.jpg';
 import About from './about';
 import Services from './services';
 import Header from './header';
+import BarraPrincipal from '../../BarraPrincipal';
 
 export default function ClinicaDental() {
   return (
     <div>
+      <BarraPrincipal/>
       <header>
         <h1 className="site-heading text-center text-faded d-none d-lg-block">
           <span className="site-heading-upper text-primary mb-3"></span>
           <span className="site-heading-lower">Clínica Odontológica</span>
         </h1>
       </header>
+
       <Header></Header>
       <section className="page-section clearfix">
         <div className="container">
