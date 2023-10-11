@@ -13,7 +13,7 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 export default function PruebaRouter() {
   return (
     <>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Routes>
           {/* <Route path="/" element={<Principal />} /> */}
           <Route path="/Canchas" element={<Canchas />} />
