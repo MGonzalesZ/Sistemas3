@@ -7,6 +7,7 @@ import C2r from '../UI/Tarjeta2r';
 import C2l from '../UI/Tarjeta2l';
 import ConCar from '../UI/ConjuntoCartas';
 import Footer from '../UI/Footer';
+import BarraPrincipal from '../../BarraPrincipal';
 
 function Plataforma() {
   const fstyle = {
@@ -22,6 +23,7 @@ function Plataforma() {
 
   return (
     <div>
+      <BarraPrincipal />
       <Titulo titulo="Plataforma de atencion" fontstyle={fstyle} />
       {/*<Doubleb />*/}
 

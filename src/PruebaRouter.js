@@ -6,7 +6,7 @@ import Canchas from './components/Canchas/Canchas';
 import Plataforma from './components/PlataformaAtencion/Plataforma';
 import ClinicaDental from './components/ConsultorioDental/ClinicaDental';
 import NAFpage from './components/NAF/NAFpage';
-import Principal from './Principal';
+import Principal from './BarraPrincipal';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -15,7 +15,6 @@ export default function PruebaRouter() {
     <>
       <Router>
         <Routes>
-          {/* MGonzalesZ */}
           {/* <Route path="/" element={<Principal />} /> */}
           <Route path="/Canchas" element={<Canchas />} />
           <Route path="/deporte" element={<DeporteItem />} />
@@ -23,12 +22,6 @@ export default function PruebaRouter() {
           <Route path="/ConsultorioDental" element={<ClinicaDental />} />
           <Route path="/NAF" element={<NAFpage />} />
           <Route path="/Fotocopiadora" element={<DeporteItem />} />
-
-          {/* Fermin */}
-          {/* Kael */}
-          {/* Mauricio Garcia */}
-          {/* Rene */}
-          {/* Lucia */}
         </Routes>
       </Router>
     </>

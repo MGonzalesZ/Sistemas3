@@ -5,7 +5,7 @@ import './App.css';
 // import Canchas from './components/MGonzalesZ/Canchas';
 // import DeporteItem from './components/MGonzalesZ/DeporteItem';
 import PruebaRouter from './PruebaRouter';
-import Principal from './Principal';
+import BarraPrincipal from './BarraPrincipal';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
       </div> */}
 
       <PruebaRouter />
-      <Principal></Principal>
+      <BarraPrincipal></BarraPrincipal>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import Navbarra from './components/UI/NavBarra';
 
-function Principal() {
+function BarraPrincipal() {
   const links = [
     { url: '/PlataformaAtencion', text: 'Plataforma Atencion' },
     { url: '/ConsultorioDental', text: 'Consultorio' },
@@ -15,4 +15,4 @@ function Principal() {
   );
 }
 
-export default Principal;
+export default BarraPrincipal;
