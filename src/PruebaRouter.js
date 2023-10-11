@@ -16,7 +16,7 @@ export default function PruebaRouter() {
       <Router>
         <Routes>
           {/* MGonzalesZ */}
-          <Route path="/" element={<Principal />} />
+          {/* <Route path="/" element={<Principal />} /> */}
           <Route path="/Canchas" element={<Canchas />} />
           <Route path="/deporte" element={<DeporteItem />} />
           <Route path="/PlataformaAtencion" element={<Plataforma />} />

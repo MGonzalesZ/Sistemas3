@@ -5,6 +5,7 @@ import './App.css';
 // import Canchas from './components/MGonzalesZ/Canchas';
 // import DeporteItem from './components/MGonzalesZ/DeporteItem';
 import PruebaRouter from './PruebaRouter';
+import Principal from './Principal';
 
 function App() {
   return (
@@ -15,9 +16,9 @@ function App() {
         <br></br>
         <Fecha></Fecha>
       </div> */}
-      <header>
-        <PruebaRouter />
-      </header>
+
+      <PruebaRouter />
+      <Principal></Principal>
     </div>
   );
 }
