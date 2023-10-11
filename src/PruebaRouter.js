@@ -8,7 +8,7 @@ import ClinicaDental from './components/ConsultorioDental/ClinicaDental';
 import NAFpage from './components/NAF/NAFpage';
 import Principal from './BarraPrincipal';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 export default function PruebaRouter() {
   return (
