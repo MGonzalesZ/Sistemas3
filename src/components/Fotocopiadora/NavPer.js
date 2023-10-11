@@ -1,4 +1,3 @@
-import Link from 'next/link';
 export function NavPer() {
   return (
     <nav
@@ -7,12 +6,12 @@ export function NavPer() {
       style={{ backgroundColor: '#762d3d' }}
     >
       <div className="container">
-        <Link
+        <a
           href="/#inicio"
           className="navbar-brand text-uppercase fw-bold d-lg-none"
         >
           Fotocopiadora
-        </Link>
+        </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -27,24 +26,24 @@ export function NavPer() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item px-lg-4">
-              <Link className="nav-link text-uppercase" href="/#inicio">
+              <a className="nav-link text-uppercase" href="/#inicio">
                 Inicio
-              </Link>
+              </a>
             </li>
             <li className="nav-item px-lg-4">
-              <Link className="nav-link text-uppercase" href="/#nosotros">
+              <a className="nav-link text-uppercase" href="/#nosotros">
                 Sobre nosotros
-              </Link>
+              </a>
             </li>
             <li className="nav-item px-lg-4">
-              <Link className="nav-link text-uppercase" href="/#servicios">
+              <a className="nav-link text-uppercase" href="/#servicios">
                 Servicios
-              </Link>
+              </a>
             </li>
             <li className="nav-item px-lg-4">
-              <Link className="nav-link text-uppercase" href="/#horario">
+              <a className="nav-link text-uppercase" href="/#horario">
                 Horarios
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

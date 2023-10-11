@@ -55,7 +55,9 @@ function DeporteItem() {
         </Grid>
       </Grid> */}
       <div className="wrapper">
-        <div className="item1"></div>
+        <div className="item1">
+          <img src={deportesImg} width="30%"></img>
+        </div>
 
         <div className="item2">
           <h4>Ubicación</h4>

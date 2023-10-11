@@ -7,13 +7,15 @@ import Plataforma from './components/PlataformaAtencion/Plataforma';
 import ClinicaDental from './components/ConsultorioDental/ClinicaDental';
 import NAFpage from './components/NAF/NAFpage';
 import Principal from './BarraPrincipal';
+import Fotocopiadora from './components/Fotocopiadora/Fotocopiadora';
 
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 export default function PruebaRouter() {
   return (
     <>
-      <Router basename={process.env.PUBLIC_URL}>
+      {/* <Router basename={process.env.PUBLIC_URL}> */}
+      <Router>
         <Routes>
           {/* <Route path="/" element={<Principal />} /> */}
           <Route path="/Canchas" element={<Canchas />} />
@@ -21,7 +23,7 @@ export default function PruebaRouter() {
           <Route path="/PlataformaAtencion" element={<Plataforma />} />
           <Route path="/ConsultorioDental" element={<ClinicaDental />} />
           <Route path="/NAF" element={<NAFpage />} />
-          <Route path="/Fotocopiadora" element={<DeporteItem />} />
+          <Route path="/Fotocopiadora" element={<Fotocopiadora />} />
         </Routes>
       </Router>
     </>
