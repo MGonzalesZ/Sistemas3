@@ -9,7 +9,7 @@ import NAFpage from './components/NAF/NAFpage';
 import Principal from './BarraPrincipal';
 import Fotocopiadora from './components/Fotocopiadora/Fotocopiadora';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './components/ConsultorioDental/about';
 import Servicios from './components/ConsultorioDental/services';
 
@@ -23,10 +23,10 @@ export default function PruebaRouter() {
   return (
     <>
       {/* <Router basename={process.env.PUBLIC_URL}> */}
-      <Router basename="/Sistemas3">
+      <Router>
         <Routes>
-          <Route path="/" element={<BarraPrincipal />} />
-          <Route path="/Sistemas3" element={<BarraPrincipal />} />
+          <Route path=" " element={<BarraPrincipal />} />
+          <Route exact path="/Sistemas3" element={<BarraPrincipal />} />
           <Route path="/Canchas" element={<Canchas />} />
           <Route path="/futsal" element={<DepZFutsal />} />
           <Route path="/volley" element={<DepZVolley />} />
