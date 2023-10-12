@@ -4,11 +4,13 @@ import products3 from './img/products-03.jpg';
 import Header from './header';
 import BarraPrincipal from '../../BarraPrincipal';
 import MTitulo from '../UI/MTitulo';
+import MEspacio from '../UI/MEspacio';
 
 function Servicios() {
   return (
     <div>
       <BarraPrincipal titulo="Clinica Odontológica" />
+      <MEspacio altura="10px" />
       <MTitulo titulo="Servicios" />
       <Header></Header>
 

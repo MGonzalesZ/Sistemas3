@@ -56,7 +56,7 @@ const Canchas = () => {
           <MCarta
             titulo={initial_deportes[0].titulo}
             desc="Haga clic para ir a detalle"
-            nombre="Ir a deporte"
+            nombre="Ir a Futsal"
             src={futsalImg}
             link="/futsal"
           />
@@ -64,7 +64,7 @@ const Canchas = () => {
           <MCarta
             titulo={initial_deportes[1].titulo}
             desc="Haga clic para ir a detalle"
-            nombre="Ir a deporte"
+            nombre="Ir a Volley"
             src={volleyImg}
             link="/volley"
           />
@@ -72,7 +72,7 @@ const Canchas = () => {
           <MCarta
             titulo={initial_deportes[2].titulo}
             desc="Haga clic para ir a detalle"
-            nombre="Ir a deporte"
+            nombre="Ir a Basquet"
             src={basquetImg}
             link="/basquet"
           />

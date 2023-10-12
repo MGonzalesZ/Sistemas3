@@ -4,12 +4,14 @@ import Header from './header';
 import BarraPrincipal from '../../BarraPrincipal';
 import MTitulo from '../UI/MTitulo';
 import MFooter from '../UI/MFooter';
+import MEspacio from '../UI/MEspacio';
 // import Image from 'next/image'
 
 function About() {
   return (
     <div>
       <BarraPrincipal titulo="Clinica Odontológica" />
+      <MEspacio altura="10px" />
       <MTitulo titulo="Sobre Nosotros" />
       {/* <header>
         <h1 className="site-heading text-center text-faded d-none d-lg-block">

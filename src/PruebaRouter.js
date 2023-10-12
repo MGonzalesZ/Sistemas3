@@ -25,6 +25,7 @@ export default function PruebaRouter() {
       {/* <Router basename={process.env.PUBLIC_URL}> */}
       <Router>
         <Routes>
+          <Route path="/" element={<BarraPrincipal />} />
           <Route path="/Sistemas3" element={<BarraPrincipal />} />
           <Route path="/Canchas" element={<Canchas />} />
           <Route path="/futsal" element={<DepZFutsal />} />
