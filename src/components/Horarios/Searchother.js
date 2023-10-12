@@ -35,14 +35,14 @@ const SearchForm = () => {
               <Button type="submit">Buscar</Button>
             </Form>
           </Col>
-          <Col md={2}>
+          {/* <Col md={2}>
             <img
               alt="Clínica Dental"
               className="img-fluid"
               width="70"
               height="70"
             />
-          </Col>
+          </Col> */}
         </Row>
         <Row>
           <p>
