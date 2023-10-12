@@ -7,8 +7,6 @@ import './App.css';
 import PruebaRouter from './PruebaRouter';
 import BarraPrincipal from './BarraPrincipal';
 import { BrowserRouter } from 'react-router-dom';
-import MFooter from './components/UI/MFooter';
-import Plataforma from './components/PlataformaAtencion/Plataforma';
 
 function App() {
   return (
@@ -21,9 +19,9 @@ function App() {
       </div> */}
 
       <PruebaRouter />
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <BarraPrincipal />
-      </BrowserRouter>
+      </BrowserRouter> */}
     </div>
   );
 }

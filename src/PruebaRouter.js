@@ -17,6 +17,7 @@ import DepZFutsal from './components/Canchas/DepZFutsal';
 import DepZVolley from './components/Canchas/DepZVolley';
 import DepZBasquet from './components/Canchas/DepZBasquet';
 import PaginaHorarios from './components/Horarios/PaginaHorarios';
+import BarraPrincipal from './BarraPrincipal';
 
 export default function PruebaRouter() {
   return (
@@ -24,7 +25,7 @@ export default function PruebaRouter() {
       {/* <Router basename={process.env.PUBLIC_URL}> */}
       <Router>
         <Routes>
-          {/* <Route path="/" element={<Principal />} /> */}
+          <Route path="/Sistemas3" element={<BarraPrincipal />} />
           <Route path="/Canchas" element={<Canchas />} />
           <Route path="/futsal" element={<DepZFutsal />} />
           <Route path="/volley" element={<DepZVolley />} />
