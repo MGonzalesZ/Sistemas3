@@ -13,6 +13,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './components/ConsultorioDental/about';
 import Servicios from './components/ConsultorioDental/services';
 
+import DepZFutsal from './components/Canchas/DepZFutsal';
+import DepZVolley from './components/Canchas/DepZVolley';
+import DepZBasquet from './components/Canchas/DepZBasquet';
+import PaginaHorarios from './components/Horarios/PaginaHorarios';
+
 export default function PruebaRouter() {
   return (
     <>
@@ -21,15 +26,16 @@ export default function PruebaRouter() {
         <Routes>
           {/* <Route path="/" element={<Principal />} /> */}
           <Route path="/Canchas" element={<Canchas />} />
-          <Route path="/deporte" element={<DeporteItem />} />
+          <Route path="/futsal" element={<DepZFutsal />} />
+          <Route path="/volley" element={<DepZVolley />} />
+          <Route path="/basquet" element={<DepZBasquet />} />
           <Route path="/PlataformaAtencion" element={<Plataforma />} />
           <Route path="/ConsultorioDental" element={<ClinicaDental />} />
           <Route path="/ConsultorioDental/about" element={<About />} />
           <Route path="/ConsultorioDental/services" element={<Servicios />} />
           <Route path="/Fotocopiadora" element={<Fotocopiadora />} />
           <Route path="/NAF" element={<NAFpage />} />
-          <Route path="/Fotocopiadora" element={<Fotocopiadora />} />
-          
+          <Route path="/Horarios" element={<PaginaHorarios />} />
         </Routes>
       </Router>
     </>

@@ -3,18 +3,14 @@ import products2 from './img/products-02.jpg';
 import products3 from './img/products-03.jpg';
 import Header from './header';
 import BarraPrincipal from '../../BarraPrincipal';
+import MTitulo from '../UI/MTitulo';
 
 function Servicios() {
   return (
     <div>
-      <BarraPrincipal/>
+      <BarraPrincipal titulo="Clinica Odontológica" />
+      <MTitulo titulo="Servicios" />
       <Header></Header>
-      <header>
-        <h1 className="site-heading text-center text-faded d-none d-lg-block">
-          <span className="site-heading-upper text-primary mb-3">Nuestros</span>
-          <span className="site-heading-lower">Servicios</span>
-        </h1>
-      </header>
 
       <section className="page-section">
         <div className="container">

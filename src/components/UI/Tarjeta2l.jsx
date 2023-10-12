@@ -8,12 +8,14 @@ function C2l(props) {
   const tstyle = {
     borderRadius: '20px',
     height: '350px',
+    backgroundColor: '#dfbcc6',
   };
   const bstyle = {
     display: 'block',
     marginLeft: 'auto',
     marginRight: 'auto',
-    backgroundColor: '#dfbcc6',
+    backgroundColor: '#762d3d',
+    color: '#dfbcc6',
   };
   const fstyle = {
     textAlign: 'left',

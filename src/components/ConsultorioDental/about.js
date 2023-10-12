@@ -2,18 +2,21 @@ import about from './img/about.jpg';
 import Header from './header';
 
 import BarraPrincipal from '../../BarraPrincipal';
+import MTitulo from '../UI/MTitulo';
+import MFooter from '../UI/MFooter';
 // import Image from 'next/image'
 
 function About() {
   return (
     <div>
-            <BarraPrincipal/>
-      <header>
+      <BarraPrincipal titulo="Clinica Odontológica" />
+      <MTitulo titulo="Sobre Nosotros" />
+      {/* <header>
         <h1 className="site-heading text-center text-faded d-none d-lg-block">
           <span className="site-heading-upper text-primary mb-3">UNIVALLE</span>
           <span className="site-heading-lower">Sobre nosotros</span>
         </h1>
-      </header>
+      </header> */}
 
       <Header></Header>
       <section className="page-section about-heading">
@@ -56,14 +59,7 @@ function About() {
           </div>
         </div>
       </section>
-      <footer
-        className="footer text-faded text-center py-5"
-        style={{ backgroundColor: '#440d20' }}
-      >
-        <div className="container">
-          <p className="m-0 small">Copyright &copy; Your Website 2023</p>
-        </div>
-      </footer>
+      <MFooter />
     </div>
   );
 }

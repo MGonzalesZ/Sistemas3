@@ -5,9 +5,11 @@ import Card1 from '../UI/Tarjeta1';
 import Paraf from '../UI/Paraf';
 import C2r from '../UI/Tarjeta2r';
 import C2l from '../UI/Tarjeta2l';
-import ConCar from '../UI/ConjuntoCartas';
+import ConCar from './ConjuntoCartas';
 import Footer from '../UI/Footer';
 import BarraPrincipal from '../../BarraPrincipal';
+import MTitulo from '../UI/MTitulo';
+import MFooter from '../UI/MFooter';
 
 function Plataforma() {
   const fstyle = {
@@ -23,9 +25,7 @@ function Plataforma() {
 
   return (
     <div>
-      <BarraPrincipal />
-      <Titulo titulo="Plataforma de atencion" fontstyle={fstyle} />
-      {/*<Doubleb />*/}
+      <BarraPrincipal titulo="Plataforma de atencion" />
 
       <Card1
         titulo="Bienvenido"
@@ -76,10 +76,7 @@ function Plataforma() {
 
       <ConCar />
 
-      <Footer
-        texto="Sistema de Informacion 2023."
-        derechos="Todos los derechos reservados"
-      />
+      <MFooter />
     </div>
   );
 }

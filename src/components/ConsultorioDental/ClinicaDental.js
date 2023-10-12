@@ -4,17 +4,19 @@ import About from './about';
 import Services from './services';
 import Header from './header';
 import BarraPrincipal from '../../BarraPrincipal';
+import MTitulo from '../UI/MTitulo';
+import MFooter from '../UI/MFooter';
 
 export default function ClinicaDental() {
   return (
     <div>
-      <BarraPrincipal/>
-      <header>
+      <BarraPrincipal titulo="Clínica Odontológica" />
+      {/* <header>
         <h1 className="site-heading text-center text-faded d-none d-lg-block">
           <span className="site-heading-upper text-primary mb-3"></span>
           <span className="site-heading-lower">Clínica Odontológica</span>
         </h1>
-      </header>
+      </header> */}
 
       <Header></Header>
       <section className="page-section clearfix">
@@ -47,7 +49,7 @@ export default function ClinicaDental() {
                 <a
                   className="btn btn-primary btn-xl"
                   href="#!"
-                  style={{ backgroundColor: '#f7eaef' }}
+                  style={{ backgroundColor: '#762d3d' }}
                 >
                   ¡Visítanos!
                 </a>
@@ -56,14 +58,7 @@ export default function ClinicaDental() {
           </div>
         </div>
       </section>
-      <footer
-        className="footer text-faded text-center py-5"
-        style={{ backgroundColor: '#440d20' }}
-      >
-        <div className="container">
-          <p className="m-0 small">Copyright &copy; CupOfLu 2023</p>
-        </div>
-      </footer>
+      <MFooter />
     </div>
   );
 }

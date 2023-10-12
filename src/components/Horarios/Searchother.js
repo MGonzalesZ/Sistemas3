@@ -1,12 +1,11 @@
-"use client";
+'use client';
 
-import React, { useState } from "react";
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
-import "./GeneralStylesComponents.css";
-import Image from 'next/image'
+import React, { useState } from 'react';
+import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import './GeneralStylesComponents.css';
 
 const SearchForm = () => {
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState('');
 
   const handleSearchTermChange = (event) => {
     setSearchTerm(event.target.value);
@@ -37,7 +36,7 @@ const SearchForm = () => {
             </Form>
           </Col>
           <Col md={2}>
-            <Image
+            <img
               alt="Clínica Dental"
               className="img-fluid"
               width="70"

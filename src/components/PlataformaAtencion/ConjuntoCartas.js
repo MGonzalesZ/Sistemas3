@@ -1,5 +1,5 @@
-import Cartas from './Carta';
-import './btnstyle.css';
+import Cartas from '../UI/MCarta';
+import '../UI/btnstyle.css';
 
 function ConCar() {
   return (

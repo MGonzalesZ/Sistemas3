@@ -1,14 +1,20 @@
-import Searchother from "./Searchother";
-import HorarioCliDent from "./HorarioCliDent";
+import Searchother from './Searchother';
+import HorarioCliDent from './HorarioCliDent';
+import BarraPrincipal from '../../BarraPrincipal';
+import MEspacio from '../UI/MEspacio';
+import Header from '../ConsultorioDental/header';
 
 function PaginaHorarios() {
-    return (
-        <div>
-            <Searchother></Searchother>
+  return (
+    <div>
+      <BarraPrincipal titulo="Clinica Odontológica" />
+      <Header />
+      <MEspacio altura="50px" />
+      <Searchother></Searchother>
 
-            <HorarioCliDent></HorarioCliDent>
-        </div>
-    );
+      <HorarioCliDent></HorarioCliDent>
+    </div>
+  );
 }
 
 export default PaginaHorarios;

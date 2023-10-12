@@ -18,7 +18,6 @@ function App() {
       </div> */}
 
       <PruebaRouter />
-      <BarraPrincipal></BarraPrincipal>
     </div>
   );
 }

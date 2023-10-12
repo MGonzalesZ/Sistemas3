@@ -53,7 +53,7 @@ function Header() {
                 </Link>
               </li>
               <li className="nav-item px-lg-4">
-                <Link to="./Horarios" className="nav-link text-uppercase">
+                <Link to="/Horarios" className="nav-link text-uppercase">
                   Horarios
                 </Link>
               </li>

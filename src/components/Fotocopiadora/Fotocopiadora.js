@@ -6,21 +6,27 @@ import './index.css';
 import { Carruselimg } from './Carruselimg';
 import { Horario } from './Horario';
 import { NavPer } from './NavPer';
-import { FooterUniv } from './FooterUniv';
+import MFooter from '../UI/MFooter';
 import { Parrafo } from './Parrafo';
 import BarraPrincipal from '../../BarraPrincipal';
 
-export default function App() {
+export default function Fotocopiadora() {
+  const scrollToSection = (event) => {
+    event.preventDefault(); // Evita la redirección predeterminada
+
+    // Obtiene el valor del atributo href del enlace y usa JavaScript para desplazarse a la sección
+    const sectionId = event.target.getAttribute('href').substring(1); // Elimina el signo '#' del href
+    const targetSection = document.getElementById(sectionId);
+
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' }); // Desplázate a la sección
+    }
+  };
   return (
     <div>
-      <BarraPrincipal/>
-      <header>
-        <h1 className="site-heading text-center text-faded d-none d-lg-block">
-          <span className="site-heading-upper text-primary mb-3"></span>
-          <span className="site-heading-lower">Fotocopiadora</span>
-        </h1>
-      </header>
-      <NavPer></NavPer>
+      <BarraPrincipal titulo="Fotocopiadora" />
+      <NavPer />
+
       <div id="inicio" className="section"></div>
       <div id="nosotros" className="section">
         <Carruselimg></Carruselimg>
@@ -75,7 +81,7 @@ export default function App() {
         </div>
       </section>
 
-      <FooterUniv></FooterUniv>
+      <MFooter />
     </div>
   );
 }

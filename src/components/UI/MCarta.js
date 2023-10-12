@@ -1,10 +1,14 @@
+import { Link } from 'react-router-dom';
 import './btnstyle.css';
 import Image from './Image';
 import Titulo from './Tittle';
 import Paraf from './Paraf';
 import Boton from './Button';
 
-function Carta(props) {
+function MCarta(props) {
+  const scrollHaciaLaCabecera = () => {
+    window.scrollTo(0, 0); // Desplaza hacia la parte superior
+  };
   const tstyle = {
     height: '300px',
     marginLeft: 'auto',
@@ -13,7 +17,7 @@ function Carta(props) {
     maxWidth: '100%',
   };
   const bstyle = {
-    backgroundColor: '#9f0342',
+    backgroundColor: '#762d3d',
   };
   const fstyle = {
     fontSize: '30px',
@@ -31,9 +35,11 @@ function Carta(props) {
       <Image src={props.src} imgstyle={tstyle} />
       <Titulo titulo={props.titulo} fontstyle={fstyle} />
       <Paraf desc={props.desc} pstyle={pstyle} />
-      <Boton nombre={props.nombre} style1={bstyle} />
+      <Link to={props.link} onClick={scrollHaciaLaCabecera}>
+        <Boton nombre={props.nombre} style1={bstyle} />
+      </Link>
     </div>
   );
 }
 
-export default Carta;
+export default MCarta;
