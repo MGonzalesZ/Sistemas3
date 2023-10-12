@@ -40,6 +40,7 @@ export default function PruebaRouter() {
           <Route path="/Horarios" element={<PaginaHorarios />} />
         </Routes>
       </Router>
+      <div>PRUEBAAAAA</div>
     </>
   );
 }
