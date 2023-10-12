@@ -9,7 +9,7 @@ import NAFpage from './components/NAF/NAFpage';
 import Principal from './BarraPrincipal';
 import Fotocopiadora from './components/Fotocopiadora/Fotocopiadora';
 
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './components/ConsultorioDental/about';
 import Servicios from './components/ConsultorioDental/services';
 
