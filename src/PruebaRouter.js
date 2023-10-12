@@ -23,7 +23,7 @@ export default function PruebaRouter() {
   return (
     <>
       {/* <Router basename={process.env.PUBLIC_URL}> */}
-      <Router>
+      <Router basename="/Sistemas3">
         <Routes>
           <Route path="/" element={<BarraPrincipal />} />
           <Route path="/Sistemas3" element={<BarraPrincipal />} />
