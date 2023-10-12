@@ -1,5 +1,5 @@
 import './btnstyle.css';
-// import Link from 'next/link';
+import { Link } from 'react-router-dom';
 
 function Navbarra(props) {
   const { title, links } = props;
@@ -13,6 +13,7 @@ function Navbarra(props) {
           {links.map((link, index) => (
             <li key={index}>
               <a href={link.url}>{link.text}</a>
+              {/* <Link to={link.url}>{link.text}</Link> */}
             </li>
           ))}
         </ul>
