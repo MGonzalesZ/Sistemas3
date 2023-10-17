@@ -7,6 +7,7 @@ import './App.css';
 import PruebaRouter from './PruebaRouter';
 import BarraPrincipal from './BarraPrincipal';
 import { BrowserRouter } from 'react-router-dom';
+import Canchas from './components/Canchas/Canchas';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <br></br>
         <Fecha></Fecha>
       </div> */}
-
+      <Canchas />
       <PruebaRouter />
       {/* <BrowserRouter>
         <BarraPrincipal />
