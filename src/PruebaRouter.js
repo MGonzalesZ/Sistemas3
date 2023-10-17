@@ -22,11 +22,12 @@ import BarraPrincipal from './BarraPrincipal';
 export default function PruebaRouter() {
   return (
     <>
+      <BarraPrincipal />
       {/* <Router basename={process.env.PUBLIC_URL}> */}
       <Router>
         <Routes>
-          <Route path="/" element={<BarraPrincipal />} />
-          <Route exact path="/Sistemas3" element={<BarraPrincipal />} />
+          <Route path="/" element={<div></div>} />
+          <Route exact path="/Sistemas3" element={<div></div>} />
           <Route path="/Canchas" element={<Canchas />} />
           <Route path="/futsal" element={<DepZFutsal />} />
           <Route path="/volley" element={<DepZVolley />} />
